@@ -1,107 +1,554 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
-    <title>Site Integra Calcarios</title>
-    <!-- <link rel="icon" type="image/x-icon" href="./favicon.ico" /> -->
-    <link rel="icon" type="image/svg+xml" href="./icon.svg">
-    <script type="text/javascript" src="files/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="files/script.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="./css/estilo.css" rel="stylesheet">
+    <!-- JavaScript Bundle with Popper -->
+    <title>Integra Calcários</title>
 </head>
-<style type="text/css">
-    body {
-        margin: 0;
-        padding: 0;
-    }
-    
-    img {
-        width: 100%;
-        position: absolute;
-        pointer-events: none;
-    }
-    
-    #layout {
-        position: absolute;
-    }
-    
-    #menu-claro {
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-    }
-    
-    #menu-escuro {
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-    }
-    
-    .area {
-        position: absolute;
-        z-index: 9999;
-        cursor: pointer;
-        ;
-    }
-    
-    .banner {
-        position: absolute;
-        width: 100%;
-        /*height: 748px;*/
-        z-index: 1;
-        /*top: 144px;*/
-    }
-    
-    #area-menu {
-        width: 100%;
-        height: 144px;
-    }
-    
-    #area-banner {
-        top: 144px;
-        width: 100%;
-        height: 748px;
-    }
-    
-    #area-projetos {
-        width: 477px;
-        height: 431px;
-        position: absolute;
-        top: 3747px;
-        left: 474.1px;
-    }
-    
-    #detalhe-projeto {
-        position: absolute;
-        width: 100%;
-        top: 3280px;
-        pointer-events: auto;
-        z-index: 1;
-    }
-    
-    .banner-oculto {
-        display: none !important;
-    }
-    
-    .banner-ativo {
-        display: block !important;
-    }
-</style>
 
 <body>
-    <!-- <div class="area" id="area-menu"></div>
-    <div class="area" id="area-banner"></div>
-    <img class="banner banner-oculto" id="banner_5" src="files/img/banner_5.png" alt="">
-    <img class="banner banner-oculto" id="banner_4" src="files/img/banner_4.png" alt="">
-    <img class="banner banner-oculto" id="banner_3" src="files/img/banner_3.png" alt="">
-    <img class="banner banner-oculto" id="banner_2" src="files/img/banner_2.png" alt="">
-    <img class="banner banner-ativo" id="banner_1" src="files/img/banner_1.png" alt="">
-    <img id="menu-escuro" src="files/img/menu_escuro.png">
-    <img id="menu-claro" src="files/img/menu_claro.png">
-    <div class="area" id="area-projetos"></div>
-    <img id="detalhe-projeto" src="files/img/detalhe_projeto.png"></img> -->
-    <img id="layout" src="layout.png" alt="">
+
+    <!-- menu 1 -->
+    <div class="menu-topo ">
+        <div class="container">
+            <div class="row ">
+                <div class="col-xl-7 col-md-6 d-none d-md-block">Distribuidor de calcários na região do Vale do Ivaí
+                </div>
+                <div class="col-xl-2 col-md-3 d-none d-md-block">
+                    <img src="./img/whatsapp.svg" alt="icone whatsapp" width="20px"> <a target="_blank" href="https://api.whatsapp.com/send?phone=+5543998598688">(43) 998598688</a>
+                </div>
+                <div class="col-xl-3 col-md-3 d-none d-md-block">
+                    <img src="./img/email.svg" alt="icone whatsapp" width="20px"> <a target="_blank" href="mailto:calcarios@integra.com.br">calcarios@integra.com.br</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- fim menu 1 -->
+
+    <!-- menu 2 -->
+    <nav class="navbar menu-integra navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand"><img src="./img/integra_calcarios_horizontal.png" width="300px" alt="logotipo integra"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-center active" href="#empresa"> empresa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#produtos"> produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#solucoes"> soluções</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#logistica"> logística</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#contato"> contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- fim menu 2 -->
+
+    <!--  banner -->
+
+    <div id="bannerPrincipal" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/Banner.png" class="img-fluid d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Banner.png" class=" img-fluid d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Banner.png" class=" img-fluid d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#bannerPrincipal" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bannerPrincipal" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--  fim banner -->
+    <!-- empresa -->
+    <div class="sessao-empresa" id="empresa">
+        <img class="marca-dagua-1" src="./img/marca-dagua-1.png" alt="marca-dagua">
+        <div class="container ">
+            <div class="row espaco-sessao">
+                <div class="col-12 d-flex justify-content-center">
+                    <img src="./img/quem_somos.svg" alt="icone quem somos" class="icone-sessao">
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <h2>Quem somos</h2>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="linha-titulos"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container espaco-sessao sessao-empresa">
+            <div class="row d-flex align-items-center p-4">
+                <div class="col-lg-6 col-sm-12">
+                    <p class="fs-5">
+                        A empresa Íntegra Calcários foi fundada no ano de 2020, como alternativa para viabilizar a correção dos solos de todo o Vale do Ivaí. A ideia começou a partir da necessidade de corrigir os solos das propriedades da família, utilizando mapeamento de solo,
+                        análise de solo e folhas, uso de taxa variável e misturas que atendessem a demanda de cada talhão. E com a ausência de empresas para prestar o serviço, o fundador Leonar Trombini, resolveu criar uma empresa para atender os demais
+                        produtores de forma completa, com alternatívas em logística, depósito local, comercialização e a aplicação dos corretivos de solo.
+                    </p>
+                    <p class="fs-5">
+                        A empresa trabalha com equipamentos novos, dispondo de distribuidores modernos e com alternativa no uso da aplicação em taxa variável e convencional, podendo assim, atender a todos os portes das propriedades rurais, desde o pequeno produtor até o produtor
+                        que utiliza tecnologias avançadas e de última geração. Outro ponto diferencias, a empresa trabalha com produtos de alta qualidade, calcário com PRNT acima de 85%. Buscando sempre inovar e melhorar, possui depósito para armazenar
+                        os produtos em local coberto, evitando assim, aumento de umidade nos períodos de chuva e mantendo o produto com a umidade adequada para realizar uma distibuição perfeita.
+                    </p>
+
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="img-quem-somos">
+                        <img class="img-fluid" src="./img/solo.png" alt="solo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fim empresa -->
+
+    <!-- produtos -->
+    <div class="bg-produtos" id="produtos">
+        <div class="container espaco-sessao text-white">
+            <div class="row espaco-sessao ">
+                <div class="col-12 d-flex justify-content-center">
+                    <img src="./img/produtos.svg" alt="icone quem somos" class="icone-sessao">
+                </div>
+                <div class="col-12 d-flex justify-content-center ">
+                    <h2 class="">Nossos Produtos</h2>
+                </div>
+                <div class="col-12 d-flex justify-content-center ">
+                    <div class="linha-titulos"></div>
+                </div>
+
+            </div>
+            <div class="row p-2">
+                <!-- produto-1 -->
+                <div class="col-xl-6 col-sm-12 d-flex justify-content-center ">
+                    <div class="item-produto text-center" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <div class="row ">
+                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                <div class="img-container">
+                                    <img src="./img/calcario-calcitico.png" alt="imagem produto">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h2>Calcário Calcítico</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim produto-1 -->
+                <!-- produto-2 -->
+                <div class="col-xl-6 col-sm-12 d-flex justify-content-center ">
+                    <div class="item-produto  text-center" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <div class="row ">
+                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                <div class="img-container">
+                                    <img src="./img/calcario-calcitico.png" alt="imagem produto">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h2>Calcário Calcítico</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim produto-2 -->
+                <!-- produto-3 -->
+                <div class="col-xl-6 col-sm-12 d-flex justify-content-center ">
+                    <div class="item-produto  text-center" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <div class="row ">
+                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                <div class="img-container">
+                                    <img src="./img/calcario-calcitico.png" alt="imagem produto">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h2>Calcário Calcítico</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- fim produto-3 -->
+                <!-- produto-4 -->
+                <div class="col-xl-6 col-sm-12 d-flex justify-content-center ">
+                    <div class="item-produto  text-center" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <div class="row ">
+                            <div class="col-12 d-flex align-items-center justify-content-center">
+
+                                <div class="img-container">
+                                    <img src="./img/calcario-calcitico.png" alt="imagem produto">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h2>Calcário Calcítico</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- fim produto-4 -->
+            </div>
+        </div>
+        <div class="espaco-sessao"></div>
+    </div>
+    <!-- fim produtos -->
+
+    <!-- modal-produtos -->
+    <div id="myModal" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content modal-produtos">
+                <div class="modal-header">
+                    <h4 class="modal-title">Calcário Calcítico</h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- <p>Modal body text goes here.</p> -->
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12">
+                            <p>
+                                Indicado para correção de solo com alta deficiência em Ca (Cálcio) e moderada deficiência de Mg (Magnésio). Os pontos fortes do calcário Calcítico são:
+                            </p>
+                            <ul>
+                                <li>
+                                    - Apresenta valor elevado de Poder de Neutralização (PN 95%) e Poder Relativo de Neutralização Total (PRNT 90%).
+                                </li>
+                                <li>- Baixa umidade;</li>
+                                <li>- Alta eficiência de neutralização da acidez;</li>
+                                <li>- Granulometria 100% passante em peneira ABNT n° 50;</li>
+                                <li>- Apresenta uma relação média de cálcio e magnésio de 10:1;</li>
+
+                            </ul>
+
+                            <h5>Informações complementares:</h5>
+                            <ul>
+                                <li>- Produzido pela empresa Votorantim, em Rio Branco do Sul, região metropolitana de Curitiba/PR;
+                                </li>
+                                <li>- Para a região Vale do Ivai - PR é comercializado pela empresa Íntegra Calcários LTDA;
+                                </li>
+                                <li>- 100% armazenado em local coberto;</li>
+                                <li>- Sempre consulte a um Engenheiro Agrônomo antes de utilizar qualquer produto.</li>
+
+                            </ul>
+
+
+                        </div>
+                        <!-- <div class="col-md-4 col-sm-12"> <img src="./img/calcario-calcitico.png" class="img-fluid" alt=""></div> -->
+                    </div>
+
+
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- fim modal-produtos -->
+
+    <div class="bg-solucoes" id="solucoes">
+        <div class="container">
+            <div class="row espaco-sessao ">
+                <div class="col-12 d-flex justify-content-center">
+                    <img src="./img/solucoes.svg" alt="icone quem somos" class="icone-sessao">
+                </div>
+                <div class="col-12 d-flex justify-content-center ">
+                    <h2 class="">Nossas Soluções</h2>
+                </div>
+                <div class="col-12 d-flex justify-content-center ">
+                    <div class="linha-titulos"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container"> -->
+
+        <div class="row row-solucoes">
+            <div class="col-xl-6 col-sm-12 order-0 order-xl-0 order-sm-0 bg-itens-solucoes p-0 d-flex align-items-center">
+                <div class="txt-solucoes ">
+                    <p>Aplicações de Corretivos e Fertilizantes: </p>
+                    <ul class="lista-solucoes">
+                        <li>
+                            <img src="./img/marcador.png" width="30px" alt=""> <span class="fs-5">Correta
+                                aplicação em seu solo;</span>
+
+                        </li>
+                        <li>
+                            <img src="./img/marcador.png" width="30px" alt=""><span class="fs-5"> Taxa Variável e
+                                Convencional:</span>
+                        </li>
+                        <li>
+                            <img src="./img/marcador.png" width="30px" alt=""><span class="fs-5"> Calcário
+                                Dolomítico;</span>
+                        </li>
+                        <li>
+                            <img src="./img/marcador.png" width="30px" alt=""><span class="fs-5"> Calcário
+                                Calcítico;</span>
+                        </li>
+                        <li>
+                            <img src="./img/marcador.png" width="30px" alt=""><span class="fs-5"> Gesso Agrícola;</span>
+                        </li>
+                        <li>
+                            <img src="./img/marcador.png" width="30px" alt=""><span class="fs-5"> Fertilizantes.</span>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="col-xl-6 col-sm-12 order-1 order-xl-1 order-sm-1 bg-itens-solucoes  p-0">
+                <img class="img-solucoes" src="./img/Camada 31.png" alt="">
+            </div>
+            <div class="col-xl-6  col-sm-12 order-2 order-xl-3 order-sm-3 bg-itens-solucoes  p-0">
+                <img class="img-solucoes" src="./img/Camada 17.png" alt="">
+            </div>
+            <div class="col-xl-6  col-sm-12 order-3 order-xl-3 order-sm-2 bg-itens-solucoes p-0 d-flex align-items-center">
+                <div class="txt-solucoes ">
+                    <p>Aplicações de Corretivos e Fertilizantes: </p>
+                    <ul class="lista-solucoes">
+                        <li>
+                            <img src="./img/marcador.png" width="20px" alt=""> <span class="fs-5">Correta aplicação em
+                                seu solo;</span>
+                        </li>
+                        <li>
+                            <img src="./img/marcador.png" width="20px" alt=""> <span class="fs-5">Taxa Variável e
+                                Convencional:</span>
+                        </li>
+                        <li>
+                            <img src="./img/marcador.png" width="20px" alt=""> <span class="fs-5">Calcário
+                                Dolomítico;</span>
+                        </li>
+                        <li>
+                            <img src="./img/marcador.png" width="20px" alt=""> <span class="fs-5">Calcário
+                                Calcítico;</span>
+                        </li>
+                        <li>
+                            <img src="./img/marcador.png" width="20px" alt=""> <span class="fs-5">Gesso Agrícola;</span>
+                        </li>
+                        <li>
+                            <img src="./img/marcador.png" width="20px" alt=""> <span class="fs-5">Fertilizantes.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+
+    <!-- serviços -->
+    <!-- fim serviços -->
+
+    <!-- logistica -->
+    <div class="sessao-logistica">
+        <div class="container" id="logistica">
+            <img class="marca-dagua-1" src="./img/marca-dagua-1.png" alt="marca-dagua">
+            <div class="row espaco-sessao ">
+                <div class="col-12 d-flex justify-content-center">
+                    <img src="./img/logistica.svg" alt="icone quem somos" class="icone-sessao">
+                </div>
+                <div class="col-12 d-flex justify-content-center ">
+                    <h2 class="">Logística</h2>
+                </div>
+                <div class="col-12 d-flex justify-content-center ">
+                    <div class="linha-titulos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xl-6 col-sm-12 d-flex align-items-center p-4">
+                    <p class="fs-5">Logística feita através de frota própria e terceiros, com o intuito de atender rapidamente os clientes. Efetuamos a entrega dos corretivos e fertilizantes na propriedade. Trabalhamos para ter o corretivo próximo, com armazém local,
+                        coberto e com rápida disponibilidade.
+                    </p>
+                </div>
+                <div class="col-xl-6 col-sm-12">
+                    <img class="img-logistica img-fluid mx-auto d-block" src="./img/Camada 18.png" alt="">
+                </div>
+            </div>
+            <div class="espaco-sessao"></div>
+        </div>
+
+    </div>
+    <!-- fim logistica -->
+
+    <!-- galeria -->
+
+    <div id="galeria" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-3  clearfix p-0  d-block">
+                        <img src="./img/galeria1.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-3 clearfix p-0  d-block">
+                        <img src="./img/galeria2.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-3 clearfix p-0  d-block">
+                        <img src="./img/galeria3.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-3 clearfix p-0  d-block">
+                        <img src="./img/galeria2.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-3 clearfix p-0  d-block">
+                        <img src="./img/galeria1.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-3 clearfix p-0  d-block">
+                        <img src="./img/galeria1.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-3 clearfix p-0  d-block">
+                        <img src="./img/galeria1.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-3 clearfix p-0  d-block">
+                        <img src="./img/galeria1.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-3 clearfix p-0  d-block">
+                        <img src="./img/galeria1.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-3 clearfix p-0  d-block">
+                        <img src="./img/galeria1.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-3 clearfix p-0  d-block">
+                        <img src="./img/galeria1.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-3 clearfix p-0  d-block">
+                        <img src="./img/galeria1.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#galeria" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#galeria" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- fim galeria -->
+
+    <!-- contato -->
+    <div class="bg-contato" id="contato">
+        <div class="container">
+            <div class="row espaco-sessao ">
+                <div class="col-12 d-flex justify-content-center">
+                    <img src="./img/contato.svg" alt="icone quem somos" class="icone-sessao">
+                </div>
+                <div class="col-12 d-flex justify-content-center ">
+                    <h2 class="">Contato</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-sm-12 form-contato">
+                    <h4>FALE CONOSCO</h4>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Seu Nome">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="E-mail">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Telefone">
+                    </div>
+                    <div class="input-group mb-3">
+                        <textarea class="form-control" placeholder="Digite sua mensagem"></textarea>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-sm-12 fs-4">
+                    <ul>
+                        <li>
+                            <img src="./img/whatsapp.svg" width="25px" alt=""> (43) 99859-8688
+                        </li>
+                        <li>
+                            <img src="./img/email.svg" width="25px" alt=""> calcarios@integra.com.br
+                        </li>
+                        <li>
+                            <img src="./img/mapa.svg" width="25px" alt=""> PR466 KM88 Lidianópolis, PR
+                        </li>
+                        <li>
+                            <img src="./img/facebook-b.svg" width="25px" alt=""> integra.calcarios
+                        </li>
+                        <li>
+                            <img src="./img/instagram-b.svg" width="25px" alt=""> integra.calcarios
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="espaco-sessao"></div>
+    </div>
+    <!-- fim contato -->
+    <!-- mapa -->
+
+    <img class="img-fluid" src="./img/mapa.png" alt="mapa">
+
+    <!-- fim mapa -->
+
+    <!-- rodapé -->
+    <div class="bg-rodape-1">
+        <div class="container padding-rodape-1">
+            <img src="./img/integra_calcarios_vertical_cinza.png" width="250px" class="rounded mx-auto d-block" alt="logo">
+        </div>
+    </div>
+    <div class="bg-rodape-2">
+        <div class="container padding-rodape-2">
+            <div class="row justify-content-center ">
+
+                <div class="col-1 d-flex justify-content-center">
+                    <a href="https://www.facebook.com/integra.calcarios"><img class="img-rs-rodape " src="./img/facebook.svg" alt="facebook"></a>
+                </div>
+                <div class="col-1 d-flex justify-content-center">
+                    <a href="https://www.instagram.com/integra.calcarios/"><img class="img-rs-rodape" src="./img/instagram.svg" alt="instagram"></a>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <p>© Copyright 2021 - Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- fim rodapé -->
 </body>
 
 </html>

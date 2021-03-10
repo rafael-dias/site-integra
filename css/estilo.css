@@ -1,0 +1,261 @@
+body {
+    /* margin-bottom: 1000px; */
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-topo {
+    background-color: #02a859;
+    color: white;
+    /* height: 50px; */
+    padding: 10px 0px;
+}
+
+.espaco-sessao {
+    padding: 80px 0px;
+}
+
+.img-quem-somos img {
+    border-radius: 100%;
+    overflow: hidden;
+    /* max-height: 500px; */
+    /* max-width: 500px; */
+    border: 10px solid #02a859;
+}
+
+.sessao-empresa {
+    position: relative;
+    overflow: hidden;
+}
+
+.marca-dagua-1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+}
+
+.bg-produtos {
+    background-color: #282828;
+    background-image: url("../img/bg1.png");
+}
+
+.bg-contato {
+    background-color: #282828;
+    color: white;
+}
+
+.row-solucoes {
+    width: 100%;
+    margin: 0px;
+}
+
+.bg-rodape-1 {
+    background-color: #282828;
+    color: white;
+}
+
+.padding-rodape-1 {
+    padding: 80px 0px;
+}
+
+.padding-rodape-2 {
+    padding: 40px 0px;
+}
+
+.bg-rodape-2 {
+    background-color: #1c1c1c;
+    color: #333333;
+}
+
+.item-produto {
+    background-color: #1f1f1f;
+    padding: 60px 0px;
+    border-radius: 5%;
+    width: 20rem;
+    margin: 50px 0px;
+    cursor: pointer;
+    transition: box-shadow 0.5s, background-color 0.5s, border-radius 0.5s;
+}
+
+.item-produto:hover {
+    background-color: #1b1b1b;
+    -webkit-box-shadow: 0px 6px 0px 0px #02a859;
+    box-shadow: 0px 6px 0px 0px #02a859;
+    border-radius: 10%;
+}
+
+.modal-produtos {
+    background-color: #11524b;
+    color: white;
+}
+
+.img-container {
+    border-radius: 100%;
+    overflow: hidden;
+    max-width: 200px;
+    max-height: 200px;
+    border: 5px solid #02a859;
+    margin: 30px 0px;
+}
+
+.bg-solucoes {
+    background-color: #02a859;
+    /* background: rgb(2, 168, 89); */
+    /* background: linear-gradient(219deg, rgba(2, 168, 89, 1) 0%, rgba(60, 220, 10, 1) 67%, rgba(2, 168, 89, 1) 100%); */
+}
+
+.bg-itens-solucoes {
+    background-color: #282828;
+}
+
+.img-solucoes {
+    /* overflow: hidden; */
+    /* border-radius: 20px; */
+    /* border: 5px solid #02a859; */
+    width: 100%;
+}
+
+.img-logistica {
+    border-radius: 20px;
+    border: 5px solid #02a859;
+    /* width: 100%; */
+}
+
+.lista-solucoes li {
+    margin: 10px 0px;
+}
+
+.txt-solucoes {
+    /* margin-left: 272px; */
+    color: #ffffff
+}
+
+.gradiente-verde {
+    linear-gradient(165deg,
+    rgb(68, 226, 15) 0%,
+    rgb(33, 169, 55) 100%);
+}
+
+.img-rs-rodape {
+    max-width: 30px;
+}
+
+.icone-sessao {
+    width: 150px;
+    margin: 20px 0px;
+}
+
+.linha-titulos {
+    height: 8px;
+    max-width: 200px;
+    margin: 10px 0px;
+    width: 200px;
+    border-radius: 20px;
+    /* background-color: #02a859; */
+    background: rgb(68, 226, 15);
+    background: linear-gradient(219deg, rgba(68, 226, 15, 1) 0%, rgba(60, 220, 10, 1) 35%, rgba(33, 169, 55, 1) 100%);
+}
+
+.form-contato {
+    padding: 0px 40px;
+}
+
+@media (max-width: 767.98px) {
+    .txt-solucoes {
+        margin: 50px 0px;
+        margin-left: 30px;
+        color: #ffffff
+    }
+    .navbar-collapse {
+        /* background-color: rgb(11, 155, 54); */
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .txt-solucoes {
+        margin-left: 272px;
+        color: #ffffff
+    }
+    /* teste-menu */
+    .nav-item {
+        margin: 0px 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .nav-item a {
+        position: relative;
+        text-align: center;
+    }
+    .nav-item a:before,
+    .nav-item a:after,
+    .current:before,
+    .current:after {
+        position: absolute;
+        -webkit-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+    }
+    .nav-item a:before,
+    .current:before {
+        bottom: 0;
+        display: block;
+        height: 3px;
+        width: 0%;
+        content: "";
+        background-color: #02a859;
+    }
+    .nav-item a:after,
+    .current:after {
+        left: 0px;
+        top: 5px;
+        position: absolute;
+        content: attr(data-hover);
+        color: #141414;
+        max-width: 0%;
+        overflow: hidden;
+    }
+    .nav-item a:hover:before,
+    .nav-item .current:before {
+        opacity: 1;
+        width: 80%;
+    }
+    .nav-item a:hover:after,
+    .nav-item .current:after {
+        max-width: 80%;
+    }
+    /* fim teste-menu */
+}
+
+.carousel.slide {
+    /* width: 100%; */
+    /* max-width: 1980px; //the largest you want the image to stretch */
+    overflow: hidden;
+}
+
+#bannerPrincipal {
+    overflow: hidden;
+}
+
+.carousel-inner {
+    /* width: 1980px; */
+    min-width: 600px;
+}
+
+.sessao-logistica {
+    position: relative;
+    overflow: hidden;
+}
